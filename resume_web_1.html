@@ -1,46 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Jerry.com</title>
-	<!-- bootstrap cdn -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Jerry.com</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
+
 <body>
 
-	<!-- Navbar -->
-	<nav>
-		
-	</nav>
-	
-	<!-- Section1 - picture homepage  -->
-	<section>
-		
-	</section>
+    <!-- Navbar -->
+    <nav>
 
-	<!-- Section2 - Service -->
-	<section>
-		
-	</section>
+    </nav>
 
-	<!-- Section3 - examples -->
-	<section>
-		
-	</section>
+    <!-- Section1 - picture homepage  -->
+    <section>
 
-	<!-- Section4 - subscribe -->
-	<section>
-		
-	</section>
-	
-	<!-- footer -->
-	<footer>
-		
-	</footer>
+    </section>
+
+    <!-- Section2 - Service -->
+    <section>
+
+    </section>
+
+    <!-- Section3 - examples -->
+    <section>
+
+    </section>
+
+    <!-- Section4 - subscribe -->
+    <section>
+        <div class="py-4 my-auto">
+            <!--       置中-->
+            <div class="mx-auto " style="width:600px;">
+                <h2 class="text-center my-5">立即上傳你的履歷</h2>
+                <!--           表格-->
+                <form class="needs-validation" novalidate>
+                    <!--               姓名-->
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <label for="Name">姓名</label>
+                        <input type="text" class="form-control" id="Name" placeholder="你的名字" required>
+                        <div class="invalid-feedback">
+                            請輸入您的姓名
+                        </div>
+                    </div>
+                    <!--輸入E-mail-->
+                    <div class="form-group">
+                        <i class="fas fa-envelope"></i>
+                        <label for="exampleInputEmail1">電子信箱</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="@xxx.com" required>
+                        <div class="invalid-feedback">
+                            請輸入您的電子信箱
+                        </div>
+
+                    </div>
+                    <!--            上傳履歷-->
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">上傳您的履歷</label>
+                        <input type="file" class="form-control-file" id="Resume">
+
+                    </div>
+
+                    <!--              提交-->
+                    <button type="submit" class="btn btn-primary">提交</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+
+    </footer>
 
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--	表單驗證-->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+    </script>
 </body>
+
 </html>
