@@ -1,0 +1,34 @@
+.homepage .homePic{
+	height: 960px;
+	background-image: url(/Users/lipohua/Desktop/web-img/home1.jpg);
+	background-size: cover;
+	background-position: 30%;
+	
+}
+
+.homepage .homeRight{
+	background-color: #003366;
+
+}
+
+.space{
+	border: 2px solid black;
+	height: 200px;
+	background-color: white ;
+}
+
+.examples_title{
+	padding: 35px 0 35px 75px;
+	font-size: 24px;
+	color: #003366;
+}
+
+.examples_text{
+	padding: 25px 60px 25px 0;
+	font-size: 14px;
+	color: #003366;
+}
+
+.examples_cards{
+
+}
