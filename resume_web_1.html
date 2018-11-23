@@ -33,6 +33,10 @@
 
 		}
 
+		.vert{
+			display: none;
+		}
+
 
 		.progressbar {
 		  counter-reset: step;
@@ -121,6 +125,62 @@
 				transform: translateY(0%);
 			}
 		}
+		
+		@media only screen and (max-width: 600px) {
+			.slideanimate {
+				display: none;
+			}
+			
+			.service {
+				margin-top: 50px !important;
+				height: 500px;
+			}
+
+			.service h1 {
+				margin-bottom: 50px;
+			}
+
+			.vert{
+				display: block;
+			}
+
+		    .box {
+		      height: 2px;
+		      width: 2px;
+		      background-color: transparent;
+		    }
+		    .timeline-section-horizontal {
+		      position: relative;
+		    }
+		    .timeline-section-horizontal:after {
+		      content: "";
+		      position: absolute;
+		      top: 0;
+		      bottom: 0;
+		      left: 50%;
+		      width: 3px;
+		      transform: translateX(-50%);
+		      background-color: #ccc;
+		    }
+		    .timeline-pointer {
+		      position: relative;
+		    }
+		    .timeline-pointer::after {
+		      content: "";
+		      position: absolute;
+		      top: 0;
+		      bottom: 0;
+		      left: 50%;
+		      width: 10px;
+		      height: 10px;
+		      border-radius: 50%;
+		      border: 3px solid #ccc;
+		      transform: translateX(-50%);
+		      background-color: #fff;
+		      z-index: 1;
+		    }
+
+		}
 
 
 	</style>
@@ -199,6 +259,49 @@
 				<li class="active">用獨特的方式<br>展現自己!</li>
 			</ul>
 		</div>
+
+		<!--section 2 for RWD-->
+		  <div class="container vert">
+		  	<h1>服務內容</h1>
+		    <div class="timeline-section-horizontal">
+		      <div class="row my-3 timeline-pointer">
+		        <div class="col-6">
+		          <p class="text-center">上傳一份履歷並留下您的聯絡方式</p>
+		        </div>
+		        <div class="col-6">
+		          <div class="box"></div>
+		        </div>
+		      </div>
+
+
+		      <div class="row timeline-pointer my-3 flex-row-reverse">
+		        <div class="col-6">
+		          <p class="text-center">討論版型設計</p>
+		        </div>
+		        <div class="col-6">
+		          <div class="box"></div>
+		        </div>
+		      </div>
+
+
+		      <div class="row timeline-pointer my-3">
+		        <div class="col-6">
+		          <p class="text-center">全力製作</p>
+		        </div>
+		        <div class="col-6">
+		          <div class="box"></div>
+		        </div>
+		      </div>
+
+
+		      <div class="row timeline-pointer my-3 flex-row-reverse">
+		        <div class="col-6">
+		          <p class="text-center">用獨特的方式<br>展現自己!</p>
+		        </div>
+		        <div class="col-6">
+		          <div class="box"></div>
+		        </div>
+		      </div>		
 
 	</section>
 
@@ -289,7 +392,7 @@
 	<section class="container" id="聯絡/訂閱">
     <div class="py-4 my-auto">
             <!--       置中-->
-            <div class="mx-auto " style="width:600px;">
+            <div class="mx-auto " style="max-width:600px;">
                 <h2 class="text-center my-5">立即上傳你的履歷</h2>
                 <!--           表格-->
                 <form class="needs-validation" novalidate>
