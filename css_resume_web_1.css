@@ -1,5 +1,5 @@
 .homepage .homePic{
-	height: 960px;
+	height: 100vh;
 	background-image: url('https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-0.3.5&s=45c5cf82d2ba1d33849dcd0b678ec566&auto=format&fit=crop&w=1052&q=80');
 	background-size: cover;
 	background-position: 30%;
@@ -8,7 +8,6 @@
 
 .homepage .homeRight{
 	background-color: #003366;
-
 }
 
 .space{
@@ -21,14 +20,59 @@
 	padding: 35px 0 35px 75px;
 	font-size: 24px;
 	color: #003366;
+	text-align: center;
 }
 
 .examples_text{
 	padding: 25px 60px 25px 0;
-	font-size: 14px;
+	font-size: 16px;
 	color: #003366;
 }
 
-.examples_cards{
-
+.examples .row{
+	display: flex;
+	justify-content: space-around;
 }
+
+.sb-preview-img img:hover{
+	opacity: 0.7;
+	transition: 0.2s ease-in ;
+}
+
+@media (max-width: 768px) {
+	.examples_title{
+		padding-right: 75px;
+		padding-bottom: 5px;
+		font-size: 30px;
+	}
+
+	.examples_text{
+		padding-top: 5px;
+		padding-left: 60px;
+		font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
