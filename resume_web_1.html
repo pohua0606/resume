@@ -98,8 +98,8 @@
 
 <body>
 
-
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-marine">
+ <!-- navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-marine fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="#"><img src="" alt="logo image"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
@@ -109,8 +109,8 @@
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav ml-auto">
 					<a class="nav-item nav-link active" href="#">首頁 <span class="sr-only">(current)</span></a>
-					<a class="nav-item nav-link ml-3" href="#">服務內容</a>
-					<a class="nav-item nav-link ml-3" href="#">作品範例</a>
+					<a class="nav-item nav-link ml-3" href="#service_flow">服務內容</a>
+					<a class="nav-item nav-link ml-3" href="#ex">作品範例</a>
 					<a class="nav-item nav-link ml-3" href="#">聯絡/訂閱</a>
 				</div>
 
@@ -140,7 +140,7 @@
 
 
 	<!-- Section3 - examples -->
-	<section class="examples">
+	<section id="ex" class="examples">
 		
 		<div class="container">
 			
@@ -262,8 +262,8 @@
 	</section>
 	
 	<!-- Section2 - Service -->
-
-	<section class="service mt-5">
+  <!-- 新增ID去做頁內跳轉，但要協調一下ID的名稱 -->
+	<section id="service_flow" class="service mt-5">
 		<div class = "container-fluid">
 			<h1>服務項目</h1>
 			<ul class="progressbar">
